@@ -59,6 +59,8 @@ class Song
   end 
   
   #initializes a song and artist_name based on the filename format 
+  #split the file with - 
+  #
   def self.new_from_filename (filename)
     file = filename.split(" - ")
     artist_name = file[0]
